@@ -16,8 +16,15 @@
 		
     if(isset($_REQUEST['submit']))
     {
-		$name = $_REQUEST['sname'];
-		echo $name. "<br>";	
+        if($_REQUEST['sname']!=null)
+        {
+            $name = $_REQUEST['sname'];
+		    echo $name. "<br>";	
+        }
+        else
+        {
+            echo "null";
+        }
 	}
     ?>
 </body>
