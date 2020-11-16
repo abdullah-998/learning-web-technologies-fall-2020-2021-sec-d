@@ -11,7 +11,7 @@
         if($name==$pass)
         {
             $_SESSION['name']=$name;
-            header("location: Dashboard.php?msg=ok");
+            header("location: Dashboard.php?msg=log");
         }
         else
         {
