@@ -13,7 +13,7 @@
         <tr>
             <td height="60px" width="700px" colspan="2">
                 <img src="logo.png" height="60px" width="100px">
-                Logged in as <a href="Profile.php"> <?php if(isset($_REQUEST['msg'])){ if($_REQUEST['msg']=='ok') echo $_SESSION['name'];} ?></a>
+                Logged in as <a href="Profile.php"> <?php if(isset($_REQUEST['msg'])){ if($_REQUEST['msg']=='log') echo $_SESSION['name'];} ?></a>
                 <a href="Log.php">Logout</a>
             </td>
         </tr>
@@ -31,7 +31,7 @@
             </td>
 
             <td height="300px" width="500px">
-                <h1>Welcome <?php if(isset($_REQUEST['msg'])){ if($_REQUEST['msg']=='ok') echo $_SESSION['name'];} ?></h1>
+                <h1>Welcome <?php if(isset($_REQUEST['msg'])){ if($_REQUEST['msg']=='log') echo $_SESSION['name'];} ?></h1>
             </td>
         </tr>
         <tr>
