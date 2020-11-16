@@ -19,7 +19,7 @@
         </tr>
         <tr>
             <td height="400px" width="200px" align="top">
-                <b>Account</b><br>
+                <b>Account</b><br><hr>
                 <ul>
                     <li><a href="Dashboard.php">Dashboard</a><br></li>
                     <li><a href="Profile.php">View Profile</a><br></li>
