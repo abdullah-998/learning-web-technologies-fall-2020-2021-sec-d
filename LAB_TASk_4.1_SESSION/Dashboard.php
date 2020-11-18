@@ -26,7 +26,7 @@
                     <li><a href="EProfile.php">Edit Profile</a><br></li>
                     <li><a href="CPic.php">Change Profile Picture</a><br></li>
                     <li><a href="CPass.php">Change Password</a><br></li>          
-                    <li><a href="Log.php">Log out</a><br></li>          
+                    <li><a href="Logout.php">Log out</a><br></li>          
                 </ul>    
             </td>
 
