@@ -33,7 +33,7 @@
             <td height="300px" width="500px">
                 <form action="CPCheck.php" method="POST">
                     <fieldset>
-                       <legend>PROFILE PICTURE</legend>
+                       <legend>CHANGE PASSWORD</legend>
                         Current Password: <input type="password" name="oldpass"><br><br>
                         New Password: <input type="password" name="npass"><br><br>
                         Retype New Password: <input type="password" name="cnpass"><br><hr>
