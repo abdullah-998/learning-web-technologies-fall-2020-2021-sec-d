@@ -19,7 +19,7 @@
             <td height="60px" width="700px" colspan="2">
                 <img src="logo.png" height="60px" width="100px">
                 Logged in as <a href="Profile.php"><?php echo $name; ?></a> | 
-                <a href="LogoutCheck.php">Logout</a>
+                <a href="Logout.php">Logout</a>
             </td>
         </tr>
         <tr>
