@@ -46,6 +46,10 @@
                             {
                                 echo "Password changed...";
                             }
+                            if($_REQUEST['msg']=='null')
+                            {
+                                echo "Null submission...";
+                            }
                             if($_REQUEST['msg']=='pass_wrong')
                             {
                                 echo "Wrong password...";
