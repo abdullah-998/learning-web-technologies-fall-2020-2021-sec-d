@@ -19,7 +19,17 @@
             <?php
             ?>
             <td height="200px" width="700px" align="left">
-                <?php
+                <form action="LogCheck.php" method="POST">
+                    <fieldset>
+                        <legend>Log in</legend>
+                        Username: <input type="text" name="name"><br><br>
+                        Password: <input type="password" name="pass"><br>
+                        <hr>
+                        <input type="checkbox">remember me?<br>
+                        <input type="submit" name="submit">
+                        <a href="Cpass.php">Change password?</a>
+                    </fieldset>
+                    <?php
                     if(isset($_REQUEST['msg']))
                     {
                         if($_REQUEST['msg']=='null')
@@ -32,16 +42,6 @@
                         }
                     }
                 ?>
-                <form action="LogCheck.php" method="POST">
-                    <fieldset>
-                        <legend>Log in</legend>
-                        Username: <input type="text" name="name"><br><br>
-                        Password: <input type="password" name="pass"><br>
-                        <hr>
-                        <input type="checkbox">remember me?<br>
-                        <input type="submit" name="submit">
-                        <a href="Cpass.php">Change password?</a>
-                    </fieldset>
                 </form>
             </td>
         </tr>
