@@ -13,7 +13,7 @@
         
         //cookie 
         setcookie('flag',true,time()+3600,'/');
-        setcookie('name',$name,time()+3600,'/');
+        setcookie('uname',$uname,time()+3600,'/');
         setcookie('pass',$pass,time()+3600,'/');
 
         if(!$name=="" and !$email=="" and !$uname=="" and !$pass=="" and !$cpass=="" and !$day=="" and !$month =="" and !$year=="" and !$gender="")
