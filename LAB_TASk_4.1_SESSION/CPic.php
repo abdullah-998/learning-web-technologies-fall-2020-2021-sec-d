@@ -33,6 +33,7 @@
             <td height="300px" width="500px">
                 <form action="CPCheck.php" method="POST">
                     <fieldset>
+                       <legend>PROFILE PICTURE</legend>
                         <?php
                             if(isset($_REQUEST['msg']))
                             {
@@ -42,9 +43,7 @@
                             {
                                 echo '<img src="user.png" height="200px" width="200px"><br><br>';
                             }
-                        ?>
-                        <legend>PROFILE PICTURE</legend>
-                        <img src="user.png" height="200px" width="200px"><br><br>
+                        ?>    
                         <input type="file" name="img"><br><hr>
                         <input type="submit" name="submit">
                     </fieldset>
