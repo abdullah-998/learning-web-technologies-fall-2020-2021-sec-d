@@ -6,7 +6,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Registration</title>
 </head>
 <body>
     <table border="1" align="center">
@@ -42,6 +42,31 @@
                         <input type="reset" name="reset">
                     </fieldset>
                 </form>
+                <?php
+                    if(isset($_REQUEST['msg']))
+                    {
+                        if($_REQUEST['msg']=='null')
+                        {
+                            echo 'null submission..';
+                        }
+                        if($_REQUEST['msg']=='inv_name')
+                        {
+                            echo 'invalid name format..';
+                        }
+                        if($_REQUEST['msg']=='pass')
+                        {
+                            echo 'password did not match..';
+                        }
+                        if($_REQUEST['msg']=='inv_date')
+                        {
+                            echo 'invalid date format..';
+                        }
+                        if($_REQUEST['msg']=='ok')
+                        {
+                            echo 'Account have created successfully..Please login';
+                        }
+                    }
+                ?>
             </td>
         </tr>
         <tr>
