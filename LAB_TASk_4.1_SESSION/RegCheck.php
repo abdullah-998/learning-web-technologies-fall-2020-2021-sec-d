@@ -24,14 +24,15 @@
                 {
                     if($day>0 and $day<=31 and $month>0 and $month<=12 and $year<2020 and $year>=1910)
                     {
-                        $_SESSION['name']=$name;
-                        $_SESSION['pass']=$pass;
-                        $_SESSION['email']=$email;
-                        $_SESSION['uname']=$uname;
-                        $_SESSION['day']=$day;
-                        $_SESSION['month']=$month;
-                        $_SESSION['year']=$year;
-                        $_SESSION['gender']=$gender;
+                        setcookie('flag',true,time()+3600,'/');
+                        setcookie('uname',$uname,time()+3600,'/');
+                        setcookie('pass',$pass,time()+3600,'/');
+                        setcookie('name',$name,time()+3600,'/');
+                        setcookie('day',$day,time()+3000,'/');
+                        setcookie('month',$month,time()+3000,'/');
+                        setcookie('year',$year,time()+3000,'/');
+                        setcookie('gender',$gender,time()+3000,'/');
+                        setcookie('email',$email,time()+3000,'/');
 
                         header('location: Reg.php?msg=ok');
                     }
