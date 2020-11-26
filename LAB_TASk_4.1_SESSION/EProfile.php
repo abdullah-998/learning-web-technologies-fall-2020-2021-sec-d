@@ -47,6 +47,15 @@
                         Year : <input type="tel" name="year" size="1"><br><hr>
                         <input type="submit" name="submit">
                     </fieldset>
+                    <?php
+                        if(isset($_REQUEST['msg']))
+                        {
+                            if($_REQUEST['msg']=='change')
+                            {
+                                echo "Save changed...";
+                            }
+                        }
+                    ?>
                 </form>
             </td>
         </tr>
