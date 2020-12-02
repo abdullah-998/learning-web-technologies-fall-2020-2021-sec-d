@@ -27,7 +27,6 @@
                         {
                             header('location: ../view/Reg.php?msg=wrong'); 
                         }
-                   
                 }
                 else
                 {
