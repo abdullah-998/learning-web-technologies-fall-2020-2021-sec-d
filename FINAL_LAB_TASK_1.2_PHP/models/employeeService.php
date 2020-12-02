@@ -20,7 +20,7 @@
     function employeeInfo($user)
     {
         $conn=getConnection();
-        $query ="select * from employees where username='{$user['name']}' and password='{$user['pass']}'";
+        $query ="select * from employees where username='{$user['name']}' and pass='{$user['pass']}'";
 
         $result=mysqli_query($conn,$query);
 
@@ -41,7 +41,7 @@
     function getAllEmployee()
     {
         $conn=getConnection();
-        $query = "select * from users";
+        $query = "select * from employees";
 
         $result = mysqli_query($conn,$query);
         $users=[];
@@ -58,7 +58,7 @@
     function updateEmployeeInfo($user)
     {
         $conn=getConnection();
-        $query="update users set username={$user['uname']},email={$user['email']} where id={$user['id']}";
+        $query="update employees set username={$user['uname']},email={$user['email']} where id={$user['id']}";
 
         $status=mysqli_query($conn,$query);
 
