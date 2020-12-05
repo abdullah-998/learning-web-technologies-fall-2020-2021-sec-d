@@ -58,7 +58,7 @@
     function updateUserInfo($user)
     {
         $conn=getConnection();
-        $query="update users set username={$user['uname']},email={$user['email']} where id={$user['id']}";
+        $query="update users set username='{$user['uname']}',email='{$user['email']}' where id='{$user['id']}'";
 
         $status=mysqli_query($conn,$query);
 
