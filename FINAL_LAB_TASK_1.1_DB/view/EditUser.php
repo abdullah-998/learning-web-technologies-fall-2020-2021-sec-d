@@ -55,7 +55,33 @@
                         <legend><b>Change Password</b></legend>
                         Password&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:<input type="password" name="pass"><hr>
                         Confirm Password&nbsp;&nbsp;&nbsp;:<input type="password" name="cpass"><hr>
-                        <input type="submit" name="submit">
+                        <input type="submit" name="submit"><br>
+                        <?php 
+                            if(isset($_REQUEST['msg']))
+                            {
+                                if($_REQUEST['msg']=='wrong')
+                                {
+                                    echo 'Something went wrong.Please try again..';
+                                }
+                                if($_REQUEST['msg']=='updated')
+                                {
+                                    echo 'Password has changed succesfully..';
+                                }
+                                if($_REQUEST['msg']=='null')
+                                {
+                                    echo 'Please enter all values properly..';
+                                }
+                                if($_REQUEST['msg']=='match')
+                                {
+                                    echo 'Password did not match..';
+                                }
+                                if($_REQUEST['msg']=='shortpass')
+                                {
+                                    echo 'Please chose a password that is greater than 7 character..';
+                                }
+
+                            }
+                        ?>
                     </fieldset>
                 </form>
                 <a href="AllUser.php">Go Back</a>
