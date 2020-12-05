@@ -71,6 +71,24 @@
             return false;
         }
     }
+
+    function changeUserPass($user)
+    {
+        $conn=getConnection();
+        $query="update users set password='{$user['pass']}' where id='{$user['id']}'";
+
+        $status=mysqli_query($conn,$query);
+        
+        if($status)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+
+    }
     
 
 ?> 
