@@ -13,7 +13,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DELETE A USER</title>
+    <title>EDIT A USER</title>
 </head>
 <body>
     <table border="1" align="center">
@@ -29,7 +29,7 @@
                         <legend><b>Update Info</b></legend>
                         Username&nbsp;&nbsp;&nbsp;:<input type="text" name="uname"><hr>
                         Email&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:<input type="email" name="email"> <button title="sample@example.com"><b>i</b></button><hr>
-                        <input type="submit" name="submit">
+                        <input type="submit" name="submit"><br>
                         <?php 
                             if(isset($_REQUEST['msgd']))
                             {
@@ -40,6 +40,10 @@
                                 if($_REQUEST['msgd']=='updated')
                                 {
                                     echo 'Account has updated succesfully..';
+                                }
+                                if($_REQUEST['msgd']=='null')
+                                {
+                                    echo 'Please enter all values properly..';
                                 }
 
                             }
