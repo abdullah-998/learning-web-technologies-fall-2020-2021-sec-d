@@ -4,7 +4,7 @@
     function insertEmployee($user)
     {
         $conn=getConnection();
-        $query="insert into employees value('','{$user['name']}','{$user['phone']}','{$user['uname']}','{$user['pass']}','{$user['type']}')";
+        $query="insert into employee value('','{$user['id']}','{$user['password']}','{$user['name']}','{$user['type']}')";
         $status=mysqli_query($conn,$query);
 
         if($status)
@@ -20,7 +20,7 @@
     function exist($id)
     {
         $conn=getConnection();
-        $query ="select * from employees where id='{$id}'";
+        $query ="select * from employee where id='{$id}'";
 
         $status=mysqli_query($conn,$query);
 
@@ -37,7 +37,7 @@
     function employeeInfo($user)
     {
         $conn=getConnection();
-        $query ="select * from employees where username='{$user['name']}' and pass='{$user['pass']}'";
+        $query ="select * from employee where id='{$user['id']}' and password='{$user['pass']}'";
 
         $result=mysqli_query($conn,$query);
 
@@ -58,7 +58,7 @@
     function getAllEmployee()
     {
         $conn=getConnection();
-        $query = "select * from employees";
+        $query = "select * from employee";
 
         $result = mysqli_query($conn,$query);
         $users=[];
@@ -75,7 +75,7 @@
     function updateEmployeeInfo($user)
     {
         $conn=getConnection();
-        $query="update employees set username={$user['uname']},email={$user['email']} where id={$user['id']}";
+        $query="update employee set username={$user['uname']},email={$user['email']} where id={$user['id']}";
 
         $status=mysqli_query($conn,$query);
 
