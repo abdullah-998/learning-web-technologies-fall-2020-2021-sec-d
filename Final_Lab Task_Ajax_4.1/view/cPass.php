@@ -15,11 +15,11 @@
     <fieldset>
         <legend>CHANGE PASSWORD</legend>
         Current Password<br>
-        <input type="password" name=""><br>
+        <input type="password" id="opass" name="oldpass"><br>
         New Password<br>
-        <input type="password" name=""><br>
+        <input type="password" id="pass" name="pass"><br>
         Retype New Password<br>
-        <input type="password" name=""><br><hr>
+        <input type="password" id="cpass" name="cpass"><br><hr>
         <input type="submit" name="submit" value="Change" onclick="chngpass()"> <a href="Home.php">Home</a>
     </fieldset>  
     </form>
