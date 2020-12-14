@@ -88,6 +88,23 @@
             return false;
         }
     }
+
+    function updatePassword($pass,$id)
+    {
+        $conn=getConnection();
+        $query="update employee set password={$pass} where id={$id}";
+
+        $status=mysqli_query($conn,$query);
+
+        if($status)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
     
 
 ?> 
