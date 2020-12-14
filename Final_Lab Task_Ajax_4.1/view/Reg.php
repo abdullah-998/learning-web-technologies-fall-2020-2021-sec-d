@@ -9,7 +9,7 @@
     <title>Registration</title>
 </head>
 <body>
-    <form method="POST">
+    <form method="POST" action="../controller/RegCheck.php">
         <fieldset>
             <legend><b>REGISTRATRION</b></legend>
             Id<br>
@@ -29,6 +29,19 @@
         </fieldset>
     </form>
     <div id="info"></div>
+    <?php
+        if(isset($_REQUEST['msg']))
+        {
+            if($_REQUEST['msg']=='ok')
+            {
+                echo 'Account created succesfully..';
+            }
+            else
+            {
+                echo 'Something went wrong..';
+            }
+        }
+    ?>
     <script src="../controller/script.js"></script>
 </body>
 </html>
