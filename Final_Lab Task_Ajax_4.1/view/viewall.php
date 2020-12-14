@@ -13,6 +13,9 @@
 <body>
     <button onclick="alluser()">See All User</button>
     <div id="info"></div>
+    <div>
+        <a href="home.php">Go Home</a>
+    </div>
     <script src="../controller/script.js"></script>
 </body>
 </html>
