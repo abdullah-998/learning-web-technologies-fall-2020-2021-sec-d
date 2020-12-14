@@ -23,7 +23,7 @@ function ajax2()
     let pass=document.querySelector('#pass')
     let cpass=document.querySelector('#cpass')
 
-    if(pass!=cpass)
+    if(pass.value!=cpass.value)
     {
         inf.innerHTML='Password not match';
     }
