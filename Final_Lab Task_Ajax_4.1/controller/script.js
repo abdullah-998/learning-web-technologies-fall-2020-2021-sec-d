@@ -69,7 +69,9 @@ function alluser()
 function chngpass()
 {
     let req= new XMLHttpRequest();
-    req.open('GET','../controller/chngpass.php',true);
+
+    let pass=document.querySelector('#pass').value;
+    req.open('GET','../controller/chngpass.php?'+pass,true);
     req.send();
 
     let inf=document.querySelector('#info')
