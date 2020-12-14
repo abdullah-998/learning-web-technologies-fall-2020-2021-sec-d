@@ -11,7 +11,7 @@
     <title>Prfile</title>
 </head>
 <body>
-    <button onclick="alluser()"></button>
+    <button onclick="alluser()">See All User</button>
     <div id="info"></div>
     <script src="../controller/script.js"></script>
 </body>
